@@ -82,12 +82,6 @@ export default function Navbar() {
               <span>EN</span>
             </button>
           </div>
-
-          {/* Lesson 1 pill */}
-          <div className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 text-xs font-semibold">
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>Ders 1</span>
-          </div>
         </div>
       </div>
     </header>

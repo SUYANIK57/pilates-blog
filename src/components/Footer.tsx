@@ -24,14 +24,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="flex flex-col items-center md:items-end text-neutral-500 text-xs gap-1.5">
-          <div className="flex items-center gap-1.5">
-            <span>Next.js • React • Vercel</span>
-            <span>•</span>
-            <span className="flex items-center gap-1 text-orange-400">
-              <Sparkles className="w-3 h-3" /> Ders 1 Projesi
-            </span>
-          </div>
+        <div className="flex flex-col items-center md:items-end text-neutral-500 text-xs">
           <p>© {new Date().getFullYear()} Kinetic Pilates. {t.footer.rights}</p>
         </div>
       </div>

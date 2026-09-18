@@ -104,7 +104,7 @@ const DICTIONARY: Record<Language, Dictionary> = {
       success: "Aramıza hoş geldiniz! İlk akış pazartesi sabahı kutunuzda.",
     },
     footer: {
-      note: "Bu proje, Web Geliştirme Ders 1 kapsamında Next.js, React ve Vercel mimarisi öğrenilerek veritabanısız olarak inşa edilmiştir.",
+      note: "Mecidiyeköy Mahallesi Şehit Ahmet Sokak No:100 Mecidiyeköy İş Merkezi",
       rights: "Tüm hakları saklıdır.",
     },
   },
@@ -156,7 +156,7 @@ const DICTIONARY: Record<Language, Dictionary> = {
       success: "Welcome aboard! Your first movement sequence arrives Monday.",
     },
     footer: {
-      note: "Built during Web Development Lesson 1 mastering Next.js, React, and Vercel architecture without a database.",
+      note: "Mecidiyeköy Mahallesi Şehit Ahmet Sokak No:100 Mecidiyeköy İş Merkezi, Istanbul",
       rights: "All rights reserved.",
     },
   },
