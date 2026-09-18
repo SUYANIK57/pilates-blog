@@ -15,14 +15,14 @@ export default function Navbar() {
         <Link href="/" className="group flex items-center gap-3">
           <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/30 group-hover:border-orange-500 transition-all duration-300">
             <span className="text-xl font-black text-orange-500 transition-transform group-hover:scale-110">
-              K
+              S
             </span>
             <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-orange-500 animate-ping opacity-75" />
             <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-orange-500" />
           </div>
           <div className="flex flex-col">
-            <span className="text-lg font-black tracking-wider text-white flex items-center gap-1.5">
-              KINETIC <span className="text-orange-500">PILATES</span>
+            <span className="text-base sm:text-lg font-black tracking-wider text-white flex items-center gap-1.5">
+              SİMGE KARAHAN <span className="text-orange-500">BAYRAKTAR</span>
             </span>
             <span className="text-xs tracking-tight text-neutral-400 font-medium">
               {t.brandTagline}

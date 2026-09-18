@@ -57,8 +57,8 @@ interface Dictionary {
 
 const DICTIONARY: Record<Language, Dictionary> = {
   tr: {
-    brandName: "KINETIC PILATES",
-    brandTagline: "Beden, Zihin & Akışkan Hareket",
+    brandName: "SİMGE KARAHAN BAYRAKTAR",
+    brandTagline: "Pilates Stüdyosu • Beden & Zihin",
     nav: {
       home: "Ana Sayfa",
       articles: "Yazılar",
@@ -66,11 +66,11 @@ const DICTIONARY: Record<Language, Dictionary> = {
       about: "Hakkımızda",
     },
     hero: {
-      badge: "DERS 1 • KİNETİK BLOG & CANLI PROJE",
+      badge: "SİMGE KARAHAN BAYRAKTAR • PILATES STUDYO",
       titlePrefix: "Bedenini Hisset,",
       titleHighlight: "Akışa Odaklan.",
       description:
-        "Pilatesin derin gücü, omurga sağlığı ve kinetik beden farkındalığı üzerine özenle hazırlanan rehberler. Güç ve zarafetin dengesini keşfedin.",
+        "Simge Karahan Bayraktar Pilates Stüdyosu'ndan derin güç, omurga sağlığı ve kinetik beden farkındalığı üzerine ilham veren rehberler.",
       exploreBtn: "Yazıları Keşfet",
       startFlowBtn: "Akışı Başlat",
     },
@@ -109,8 +109,8 @@ const DICTIONARY: Record<Language, Dictionary> = {
     },
   },
   en: {
-    brandName: "KINETIC PILATES",
-    brandTagline: "Body, Mind & Fluid Motion",
+    brandName: "SİMGE KARAHAN BAYRAKTAR",
+    brandTagline: "Pilates Studio • Body & Mind",
     nav: {
       home: "Home",
       articles: "Articles",
@@ -118,11 +118,11 @@ const DICTIONARY: Record<Language, Dictionary> = {
       about: "About",
     },
     hero: {
-      badge: "LESSON 1 • KINETIC BLOG & LIVE PROJECT",
+      badge: "SİMGE KARAHAN BAYRAKTAR • PILATES STUDIO",
       titlePrefix: "Feel The Form,",
       titleHighlight: "Master The Flow.",
       description:
-        "Thoughtful guides on Pilates core activation, spinal longevity, and kinetic body awareness. Discover the union of deep strength and effortless grace.",
+        "Thoughtful guides from Simge Karahan Bayraktar Pilates Studio on core activation, spinal longevity, and kinetic movement.",
       exploreBtn: "Explore Articles",
       startFlowBtn: "Begin Flow",
     },

@@ -13,10 +13,10 @@ export default function Footer() {
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           <div className="flex items-center gap-2 mb-2">
             <span className="text-base font-extrabold text-white tracking-wider">
-              KINETIC <span className="text-orange-500">PILATES</span>
+              SİMGE KARAHAN <span className="text-orange-500">BAYRAKTAR</span>
             </span>
             <span className="text-xs px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/20 font-bold">
-              v1.0
+              Pilates Stüdyo
             </span>
           </div>
           <p className="text-neutral-500 text-xs max-w-md leading-relaxed">

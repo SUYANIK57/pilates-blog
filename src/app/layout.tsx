@@ -14,10 +14,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kinetic Pilates | Beden, Zihin & Akışkan Hareket Blogu",
+  title: "Simge Karahan Bayraktar | Pilates Stüdyo & Beden Farkındalığı",
   description:
-    "Pilates rehberleri, omurga sağlığı ve kinetik beden farkındalığı. Next.js, React ve Vercel ile Ders 1 özel projesi.",
-  keywords: ["pilates", "reformer", "mat pilates", "omurga sağlığı", "kinetic", "mindful movement"],
+    "Simge Karahan Bayraktar Pilates Stüdyosu blog rehberleri, omurga sağlığı ve kinetik beden farkındalığı.",
+  keywords: ["simge karahan bayraktar", "pilates", "reformer", "mat pilates", "pilates stüdyo"],
 };
 
 export default function RootLayout({
