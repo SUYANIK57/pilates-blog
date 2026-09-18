@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #ff6b00;
+  --primary-hover: #e65c00;
+  --primary-glow: rgba(255, 107, 0, 0.25);
+  --background: #0d0f12;
+  --foreground: #f4f4f5;
+  --card-bg: rgba(23, 27, 34, 0.85);
+  --card-border: rgba(255, 255, 255, 0.08);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
+  selection-background-color: var(--primary);
+  selection-color: #ffffff;
+}
+
+::selection {
+  background-color: #ff6b00;
+  color: #ffffff;
+}
+
+/* Custom kinetic pulse & glow animations */
+@keyframes kineticFloat {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-8px) scale(1.02);
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.06);
+  }
+}
+
+.animate-kinetic-float {
+  animation: kineticFloat 6s ease-in-out infinite;
+}
+
+.animate-glow-pulse {
+  animation: glowPulse 8s ease-in-out infinite;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: var(--card-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--card-border);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  border-color: rgba(255, 107, 0, 0.4);
+  box-shadow: 0 10px 30px -10px rgba(255, 107, 0, 0.2);
+  transform: translateY(-3px);
+}
