@@ -33,8 +33,6 @@ interface Dictionary {
     line1: string;
     line2: string;
     line3: string;
-    line4: string;
-    line5: string;
     description: string;
     exploreBtn: string;
     startFlowBtn: string;
@@ -181,11 +179,9 @@ const DICTIONARY: Record<Language, Dictionary> = {
     },
     hero: {
       badge: "SİMGE KARAHAN BAYRAKTAR • PILATES STUDYO",
-      line1: "Daha güçlü,",
-      line2: "Daha esnek,",
-      line3: "Daha dengeli",
-      line4: "bir sen için",
-      line5: "buradayız 🧡",
+      line1: "Daha güçlü daha esnek",
+      line2: "daha dengeli bir sen için",
+      line3: "buradayız 🧡",
       description:
         "Simge Karahan Bayraktar Pilates Stüdyosu'ndan derin güç, omurga sağlığı ve kinetik beden farkındalığı üzerine ilham veren rehberler.",
       exploreBtn: "Yazıları Keşfet",
@@ -396,11 +392,9 @@ const DICTIONARY: Record<Language, Dictionary> = {
     },
     hero: {
       badge: "SİMGE KARAHAN BAYRAKTAR • PILATES STUDIO",
-      line1: "Stronger,",
-      line2: "More flexible,",
-      line3: "More balanced,",
-      line4: "for a vital you,",
-      line5: "we are here 🧡",
+      line1: "Stronger, more flexible,",
+      line2: "for a more balanced you,",
+      line3: "we are here 🧡",
       description:
         "Thoughtful guides from Simge Karahan Bayraktar Pilates Studio on core activation, spinal longevity, and kinetic movement.",
       exploreBtn: "Explore Articles",
