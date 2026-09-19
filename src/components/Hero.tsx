@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import { ArrowDown, Flame, Activity, ShieldCheck } from "lucide-react";
 
@@ -14,13 +15,22 @@ export default function Hero() {
       <div className="absolute top-1/2 right-10 w-[300px] h-[300px] bg-amber-500/10 blur-[100px] rounded-full pointer-events-none" />
 
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 text-center">
-        {/* Animated Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-neutral-900/80 border border-orange-500/30 text-xs font-semibold tracking-wider text-orange-400 mb-8 shadow-sm">
+        {/* Animated Badge with Logo */}
+        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-neutral-900/90 border border-orange-500/30 text-xs font-semibold tracking-wider text-orange-400 mb-8 shadow-sm">
+          <div className="w-5 h-5 rounded-full overflow-hidden bg-[#faf7f2] flex items-center justify-center shrink-0">
+            <Image
+              src="/logo.jpg"
+              alt="Logo"
+              width={20}
+              height={20}
+              className="w-full h-full object-contain"
+            />
+          </div>
           <span className="flex h-2 w-2 relative">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
           </span>
-          {t.hero.badge}
+          <span>{t.hero.badge}</span>
         </div>
 
         {/* Kinetic Main Typography */}

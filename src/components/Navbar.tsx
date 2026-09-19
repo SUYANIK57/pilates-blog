@@ -2,8 +2,8 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
-import { Globe, Sparkles } from "lucide-react";
 
 export default function Navbar() {
   const { lang, setLang, t } = useLanguage();
@@ -13,10 +13,14 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
         {/* Brand Logo with kinetic pulsing dot */}
         <Link href="/" className="group flex items-center gap-3">
-          <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/30 group-hover:border-orange-500 transition-all duration-300">
-            <span className="text-xl font-black text-orange-500 transition-transform group-hover:scale-110">
-              S
-            </span>
+          <div className="relative flex items-center justify-center w-11 h-11 rounded-xl overflow-hidden bg-[#faf7f2] border border-orange-500/30 group-hover:border-orange-500 transition-all duration-300 shadow-sm">
+            <Image
+              src="/logo.jpg"
+              alt="Simge Bayraktar Pilates Logo"
+              width={44}
+              height={44}
+              className="w-full h-full object-contain p-0.5"
+            />
             <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-orange-500 animate-ping opacity-75" />
             <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-orange-500" />
           </div>
