@@ -39,10 +39,12 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Kinetic Main Typography - Tek renk turuncu ve 🧡 kalpli */}
-        <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-500 to-amber-300 drop-shadow-[0_4px_24px_rgba(255,107,0,0.3)] mb-6 leading-[1.18]">
-          {t.hero.titlePrefix} <br className="hidden sm:block" />
-          {t.hero.titleHighlight}
+        {/* Kinetic Main Typography - 4 satırlı turuncu ve 🧡 kalpli */}
+        <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-500 to-amber-300 drop-shadow-[0_4px_24px_rgba(255,107,0,0.3)] mb-6 leading-[1.14]">
+          <span className="block">{t.hero.line1}</span>
+          <span className="block">{t.hero.line2}</span>
+          <span className="block">{t.hero.line3}</span>
+          <span className="block">{t.hero.line4}</span>
         </h1>
 
         {/* Subtitle */}
