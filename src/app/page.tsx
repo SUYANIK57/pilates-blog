@@ -4,13 +4,15 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import BlogFeed from "@/components/BlogFeed";
+import Testimonials from "@/components/Testimonials";
+import LocationMap from "@/components/LocationMap";
 import Newsletter from "@/components/Newsletter";
 import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-[#0d0f12] text-neutral-100 selection:bg-orange-500 selection:text-white">
-      {/* Top sticky Navigation with Language Switcher */}
+    <div className="min-h-screen flex flex-col bg-[var(--background)] text-[var(--foreground)] selection:bg-orange-500 selection:text-white transition-colors duration-300">
+      {/* Top sticky Navigation with Language Switcher and Theme Toggle */}
       <Navbar />
 
       {/* Main Content Area */}
@@ -20,6 +22,12 @@ export default function Home() {
 
         {/* Dynamic Filterable Blog Feed */}
         <BlogFeed />
+
+        {/* Client Testimonials */}
+        <Testimonials />
+
+        {/* Studio Location & Interactive Map */}
+        <LocationMap />
 
         {/* Newsletter Call to Action */}
         <Newsletter />

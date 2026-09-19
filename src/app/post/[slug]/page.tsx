@@ -59,7 +59,7 @@ export default function PostDetailPage({
   const otherPosts = BLOG_POSTS.filter((p) => p.id !== post.id).slice(0, 2);
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#0d0f12] text-neutral-100">
+    <div className="min-h-screen flex flex-col bg-[var(--background)] text-[var(--foreground)] transition-colors duration-300">
       {/* Top Reading Progress Bar (Kinetic Orange) */}
       <div
         className="fixed top-0 left-0 h-1 bg-gradient-to-r from-orange-600 via-orange-500 to-amber-400 z-[100] transition-all duration-75"

@@ -11,6 +11,8 @@ interface Dictionary {
     home: string;
     articles: string;
     philosophy: string;
+    testimonials: string;
+    location: string;
     about: string;
   };
   hero: {
@@ -42,6 +44,24 @@ interface Dictionary {
   shareArticle: string;
   copiedText: string;
   keyTakeaways: string;
+  testimonials: {
+    sectionBadge: string;
+    sectionTitle: string;
+    sectionSubtitle: string;
+  };
+  location: {
+    sectionBadge: string;
+    sectionTitle: string;
+    sectionSubtitle: string;
+    addressTitle: string;
+    addressVal: string;
+    transitTitle: string;
+    transitDesc: string;
+    hoursTitle: string;
+    hoursDesc: string;
+    getDirections: string;
+    contactBtn: string;
+  };
   newsletter: {
     title: string;
     subtitle: string;
@@ -63,12 +83,14 @@ const DICTIONARY: Record<Language, Dictionary> = {
       home: "Ana Sayfa",
       articles: "Yazılar",
       philosophy: "Felsefe",
+      testimonials: "Danışanlar",
+      location: "Konum",
       about: "Hakkımızda",
     },
     hero: {
       badge: "SİMGE KARAHAN BAYRAKTAR • PILATES STUDYO",
-      titlePrefix: "Bedenini Hisset,",
-      titleHighlight: "Akışa Odaklan.",
+      titlePrefix: "Daha güçlü daha dengeli bir sen için",
+      titleHighlight: "buradayız <3",
       description:
         "Simge Karahan Bayraktar Pilates Stüdyosu'ndan derin güç, omurga sağlığı ve kinetik beden farkındalığı üzerine ilham veren rehberler.",
       exploreBtn: "Yazıları Keşfet",
@@ -95,6 +117,26 @@ const DICTIONARY: Record<Language, Dictionary> = {
     shareArticle: "Yazıyı Paylaş",
     copiedText: "Bağlantı kopyalandı!",
     keyTakeaways: "Önemli Çıkarımlar & İpuçları",
+    testimonials: {
+      sectionBadge: "DANIŞAN DENEYİMLERİ",
+      sectionTitle: "Danışanlarımızın Gözünden Stüdyomuz",
+      sectionSubtitle:
+        "Bedenini keşfeden, omurga ağrılarından kurtulan ve gücüne kavuşan üyelerimizin gerçek yorumları.",
+    },
+    location: {
+      sectionBadge: "STÜDYO KONUMU & ULAŞIM",
+      sectionTitle: "Bize Kolayca Ulaşın",
+      sectionSubtitle:
+        "İstanbul'un kalbinde, ferah ve huzurlu bir stüdyo ortamında sizleri ağırlamaktan mutluluk duyuyoruz.",
+      addressTitle: "Açık Adresimiz",
+      addressVal: "Mecidiyeköy Mahallesi Şehit Ahmet Sokak No:100 Mecidiyeköy İş Merkezi, Şişli / İstanbul",
+      transitTitle: "Toplu Taşıma Kolaylığı",
+      transitDesc: "Mecidiyeköy Metrobüs durağına ve M2/M7 Metro hatlarına yalnızca 3 dakika yürüme mesafesinde.",
+      hoursTitle: "Çalışma Saatleri",
+      hoursDesc: "Pazartesi - Cumartesi: 07:30 - 21:00 (Pazar günleri randevu ile)",
+      getDirections: "Google Haritalarda Aç",
+      contactBtn: "WhatsApp İletişim Hattı",
+    },
     newsletter: {
       title: "Haftalık Akış Bülteni",
       subtitle:
@@ -115,12 +157,14 @@ const DICTIONARY: Record<Language, Dictionary> = {
       home: "Home",
       articles: "Articles",
       philosophy: "Philosophy",
+      testimonials: "Reviews",
+      location: "Location",
       about: "About",
     },
     hero: {
       badge: "SİMGE KARAHAN BAYRAKTAR • PILATES STUDIO",
-      titlePrefix: "Feel The Form,",
-      titleHighlight: "Master The Flow.",
+      titlePrefix: "For a stronger, more balanced you,",
+      titleHighlight: "we are here <3",
       description:
         "Thoughtful guides from Simge Karahan Bayraktar Pilates Studio on core activation, spinal longevity, and kinetic movement.",
       exploreBtn: "Explore Articles",
@@ -147,6 +191,26 @@ const DICTIONARY: Record<Language, Dictionary> = {
     shareArticle: "Share Article",
     copiedText: "Link copied to clipboard!",
     keyTakeaways: "Key Movement Cues & Tips",
+    testimonials: {
+      sectionBadge: "CLIENT EXPERIENCES",
+      sectionTitle: "Through Our Members' Words",
+      sectionSubtitle:
+        "Genuine feedback from clients revitalizing their posture and reclaiming their core power.",
+    },
+    location: {
+      sectionBadge: "STUDIO LOCATION & ACCESS",
+      sectionTitle: "Find Your Way To Us",
+      sectionSubtitle:
+        "Located in the heart of Istanbul, welcoming you in a serene, spacious, and dedicated studio atmosphere.",
+      addressTitle: "Studio Address",
+      addressVal: "Mecidiyeköy Mahallesi Şehit Ahmet Sokak No:100 Mecidiyeköy İş Merkezi, Şişli / Istanbul",
+      transitTitle: "Transit Ease",
+      transitDesc: "Only a 3-minute walking distance from Mecidiyeköy Metrobus stop and M2/M7 Metro lines.",
+      hoursTitle: "Studio Hours",
+      hoursDesc: "Monday - Saturday: 07:30 - 21:00 (Sundays by appointment)",
+      getDirections: "Open in Google Maps",
+      contactBtn: "WhatsApp Contact",
+    },
     newsletter: {
       title: "Weekly Movement Dispatch",
       subtitle:
