@@ -9,23 +9,24 @@ export default function Navbar() {
   const { lang, setLang, t } = useLanguage();
 
   return (
-    <header className="sticky top-0 z-50 w-full backdrop-blur-xl bg-[#0d0f12]/80 border-b border-white/5 transition-all">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+    <header className="sticky top-0 z-50 w-full backdrop-blur-xl bg-[#0d0f12]/85 border-b border-white/5 transition-all">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 h-20 sm:h-24 flex items-center justify-between">
         {/* Brand Logo with kinetic pulsing dot */}
-        <Link href="/" className="group flex items-center gap-3">
-          <div className="relative flex items-center justify-center w-11 h-11 rounded-xl overflow-hidden bg-[#faf7f2] border border-orange-500/30 group-hover:border-orange-500 transition-all duration-300 shadow-sm">
+        <Link href="/" className="group flex items-center gap-3 sm:gap-4">
+          <div className="relative flex items-center justify-center h-14 sm:h-16 w-24 sm:w-28 rounded-2xl overflow-hidden bg-[#faf7f2] border border-orange-500/40 group-hover:border-orange-500 transition-all duration-300 shadow-md p-1 shrink-0">
             <Image
               src="/logo.jpg"
               alt="Simge Bayraktar Pilates Logo"
-              width={44}
-              height={44}
-              className="w-full h-full object-contain p-0.5"
+              width={140}
+              height={85}
+              className="w-full h-full object-contain"
+              priority
             />
             <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-orange-500 animate-ping opacity-75" />
             <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-orange-500" />
           </div>
           <div className="flex flex-col">
-            <span className="text-base sm:text-lg font-black tracking-wider text-white flex items-center gap-1.5">
+            <span className="text-sm sm:text-base md:text-lg font-black tracking-wider text-white flex items-center gap-1.5">
               SİMGE KARAHAN <span className="text-orange-500">BAYRAKTAR</span>
             </span>
             <span className="text-xs tracking-tight text-neutral-400 font-medium">

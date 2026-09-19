@@ -15,22 +15,28 @@ export default function Hero() {
       <div className="absolute top-1/2 right-10 w-[300px] h-[300px] bg-amber-500/10 blur-[100px] rounded-full pointer-events-none" />
 
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 text-center">
-        {/* Animated Badge with Logo */}
-        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-neutral-900/90 border border-orange-500/30 text-xs font-semibold tracking-wider text-orange-400 mb-8 shadow-sm">
-          <div className="w-5 h-5 rounded-full overflow-hidden bg-[#faf7f2] flex items-center justify-center shrink-0">
+        {/* Prominent High-Resolution Logo Showcase */}
+        <div className="flex flex-col items-center justify-center mb-8">
+          <div className="relative p-3.5 sm:p-4 rounded-3xl bg-[#faf7f2] border-2 border-orange-500/40 shadow-2xl shadow-orange-500/15 hover:scale-[1.02] transition-all duration-300">
             <Image
               src="/logo.jpg"
-              alt="Logo"
-              width={20}
-              height={20}
-              className="w-full h-full object-contain"
+              alt="Simge Bayraktar Pilates Stüdyo"
+              width={260}
+              height={155}
+              className="w-48 sm:w-64 h-auto object-contain"
+              priority
             />
+            <span className="absolute -top-1.5 -right-1.5 w-3.5 h-3.5 rounded-full bg-orange-500 animate-ping opacity-75" />
+            <span className="absolute -top-1.5 -right-1.5 w-3.5 h-3.5 rounded-full bg-orange-500 shadow-md" />
           </div>
-          <span className="flex h-2 w-2 relative">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
-          </span>
-          <span>{t.hero.badge}</span>
+
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-900/90 border border-orange-500/30 text-xs font-semibold tracking-wider text-orange-400 mt-4 shadow-sm">
+            <span className="flex h-2 w-2 relative">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
+            </span>
+            <span>{t.hero.badge}</span>
+          </div>
         </div>
 
         {/* Kinetic Main Typography */}
