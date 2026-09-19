@@ -90,7 +90,7 @@ const DICTIONARY: Record<Language, Dictionary> = {
     hero: {
       badge: "SİMGE KARAHAN BAYRAKTAR • PILATES STUDYO",
       titlePrefix: "Daha güçlü daha dengeli bir sen için",
-      titleHighlight: "buradayız <3",
+      titleHighlight: "buradayız 🧡",
       description:
         "Simge Karahan Bayraktar Pilates Stüdyosu'ndan derin güç, omurga sağlığı ve kinetik beden farkındalığı üzerine ilham veren rehberler.",
       exploreBtn: "Yazıları Keşfet",
@@ -164,7 +164,7 @@ const DICTIONARY: Record<Language, Dictionary> = {
     hero: {
       badge: "SİMGE KARAHAN BAYRAKTAR • PILATES STUDIO",
       titlePrefix: "For a stronger, more balanced you,",
-      titleHighlight: "we are here <3",
+      titleHighlight: "we are here 🧡",
       description:
         "Thoughtful guides from Simge Karahan Bayraktar Pilates Studio on core activation, spinal longevity, and kinetic movement.",
       exploreBtn: "Explore Articles",
