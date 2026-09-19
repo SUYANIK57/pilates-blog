@@ -33,6 +33,7 @@ interface Dictionary {
     line2: string;
     line3: string;
     line4: string;
+    line5: string;
     description: string;
     exploreBtn: string;
     startFlowBtn: string;
@@ -124,7 +125,7 @@ const DICTIONARY: Record<Language, Dictionary> = {
     brandTagline: "Pilates Stüdyosu • Beden & Zihin",
     nav: {
       home: "Ana Sayfa",
-      pricing: "Seans Ücretleri",
+      pricing: "Paketler",
       articles: "Yazılar",
       philosophy: "Felsefe",
       testimonials: "Danışanlar",
@@ -133,14 +134,15 @@ const DICTIONARY: Record<Language, Dictionary> = {
     },
     hero: {
       badge: "SİMGE KARAHAN BAYRAKTAR • PILATES STUDYO",
-      line1: "daha güçlü",
-      line2: "daha dengeli",
-      line3: "bir sen için",
-      line4: "buradayız 🧡",
+      line1: "Daha güçlü,",
+      line2: "Daha esnek,",
+      line3: "Daha dengeli",
+      line4: "bir sen için",
+      line5: "buradayız 🧡",
       description:
         "Simge Karahan Bayraktar Pilates Stüdyosu'ndan derin güç, omurga sağlığı ve kinetik beden farkındalığı üzerine ilham veren rehberler.",
       exploreBtn: "Yazıları Keşfet",
-      startFlowBtn: "Seans Paketleri",
+      startFlowBtn: "Paketler",
     },
     pricing: {
       sectionBadge: "SEANS PAKETLERİ & ÜCRETLER",
@@ -291,7 +293,7 @@ const DICTIONARY: Record<Language, Dictionary> = {
     brandTagline: "Pilates Studio • Body & Mind",
     nav: {
       home: "Home",
-      pricing: "Pricing & Sessions",
+      pricing: "Packages",
       articles: "Articles",
       philosophy: "Philosophy",
       testimonials: "Reviews",
@@ -300,14 +302,15 @@ const DICTIONARY: Record<Language, Dictionary> = {
     },
     hero: {
       badge: "SİMGE KARAHAN BAYRAKTAR • PILATES STUDIO",
-      line1: "for a stronger,",
-      line2: "more balanced,",
-      line3: "vital you,",
-      line4: "we are here 🧡",
+      line1: "Stronger,",
+      line2: "More flexible,",
+      line3: "More balanced,",
+      line4: "for a vital you,",
+      line5: "we are here 🧡",
       description:
         "Thoughtful guides from Simge Karahan Bayraktar Pilates Studio on core activation, spinal longevity, and kinetic movement.",
       exploreBtn: "Explore Articles",
-      startFlowBtn: "Session Packages",
+      startFlowBtn: "Packages",
     },
     pricing: {
       sectionBadge: "SESSION PACKAGES & PRICING",
