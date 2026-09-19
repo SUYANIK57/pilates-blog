@@ -3,6 +3,7 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import Pricing from "@/components/Pricing";
 import BlogFeed from "@/components/BlogFeed";
 import Testimonials from "@/components/Testimonials";
 import LocationMap from "@/components/LocationMap";
@@ -19,6 +20,9 @@ export default function Home() {
       <main className="flex-1 w-full">
         {/* Animated Hero Section */}
         <Hero />
+
+        {/* Studio Session Packages & Pricing */}
+        <Pricing />
 
         {/* Dynamic Filterable Blog Feed */}
         <BlogFeed />

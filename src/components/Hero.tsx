@@ -60,7 +60,7 @@ export default function Hero() {
             <ArrowDown className="w-4 h-4 transition-transform group-hover:translate-y-1" />
           </a>
           <a
-            href="#philosophy"
+            href="#pricing"
             className="w-full sm:w-auto px-8 py-4 rounded-xl bg-neutral-900/80 hover:bg-neutral-800 text-neutral-200 hover:text-white border border-white/10 font-bold text-sm tracking-wide transition-all duration-300 hover:-translate-y-0.5"
           >
             {t.hero.startFlowBtn}

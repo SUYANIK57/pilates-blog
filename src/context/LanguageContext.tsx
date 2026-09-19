@@ -4,11 +4,23 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 
 export type Language = "tr" | "en";
 
+interface PackageDetails {
+  name: string;
+  sessions: string;
+  price: string;
+  priceNumber: string;
+  unit: string;
+  badge: string;
+  desc: string;
+  features: string[];
+}
+
 interface Dictionary {
   brandName: string;
   brandTagline: string;
   nav: {
     home: string;
+    pricing: string;
     articles: string;
     philosophy: string;
     testimonials: string;
@@ -22,6 +34,35 @@ interface Dictionary {
     description: string;
     exploreBtn: string;
     startFlowBtn: string;
+  };
+  pricing: {
+    sectionBadge: string;
+    sectionTitle: string;
+    sectionSubtitle: string;
+    slogan: string;
+    tabCards: string;
+    tabTable: string;
+    bookWhatsapp: string;
+    sessionsSuffix: string;
+    perPersonSuffix: string;
+    tableHeaderProgram: string;
+    tableHeaderPrice: string;
+    tableSubnote: string;
+    packages: {
+      single: PackageDetails;
+      duet: PackageDetails;
+      trio: PackageDetails;
+      quad: PackageDetails;
+    };
+    perksTitle: string;
+    perk1Title: string;
+    perk1Desc: string;
+    perk2Title: string;
+    perk2Desc: string;
+    perk3Title: string;
+    perk3Desc: string;
+    perk4Title: string;
+    perk4Desc: string;
   };
   stats: {
     stat1: string;
@@ -81,6 +122,7 @@ const DICTIONARY: Record<Language, Dictionary> = {
     brandTagline: "Pilates Stüdyosu • Beden & Zihin",
     nav: {
       home: "Ana Sayfa",
+      pricing: "Seans Ücretleri",
       articles: "Yazılar",
       philosophy: "Felsefe",
       testimonials: "Danışanlar",
@@ -94,7 +136,97 @@ const DICTIONARY: Record<Language, Dictionary> = {
       description:
         "Simge Karahan Bayraktar Pilates Stüdyosu'ndan derin güç, omurga sağlığı ve kinetik beden farkındalığı üzerine ilham veren rehberler.",
       exploreBtn: "Yazıları Keşfet",
-      startFlowBtn: "Akışı Başlat",
+      startFlowBtn: "Seans Paketleri",
+    },
+    pricing: {
+      sectionBadge: "SEANS PAKETLERİ & ÜCRETLER",
+      sectionTitle: "Hedeflerinize Özel Seans Paketleri",
+      sectionSubtitle:
+        "Aletli Pilates (Reformer & Cadillac) donanımlı butik stüdyomuzda Simge Karahan Bayraktar eşliğinde bedenini yeniden inşa et.",
+      slogan: "Daha Güçlü, Daha Dengeli Bir Sen İçin Buradayız 🧡",
+      tabCards: "Kart Detayları",
+      tabTable: "Resmi Seans Tablosu",
+      bookWhatsapp: "WhatsApp ile Randevu Al",
+      sessionsSuffix: "8 Seanslık Paket",
+      perPersonSuffix: "8 Seans / Kişi Başı",
+      tableHeaderProgram: "PROGRAM & SEANS BİLGİSİ",
+      tableHeaderPrice: "PAKET ÜCRETİ",
+      tableSubnote: "* Tüm seanslar 50 dakikadır. Paketler 1 ay içerisinde tamamlanacak şekilde planlanır.",
+      packages: {
+        single: {
+          name: "BİREYSEL DERS",
+          sessions: "8 SEANS",
+          price: "8.500 ₺",
+          priceNumber: "8.500",
+          unit: "8 Seanslık VIP Paket",
+          badge: "En Çok Tercih Edilen • VIP",
+          desc: "Tamamen sizin anatomik yapınıza, postürünüze ve kişisel hedefinize özel hazırlanan birebir premium seanslar.",
+          features: [
+            "Birebir eğitmen ile 50 dk kesintisiz odak",
+            "Kapsamlı postür & omurga hareket analizi",
+            "Reformer, Cadillac, Chair tam ekipman",
+            "Kişiye özel esnek gün ve saat takvimi",
+            "Haftalık gelişim ve esneklik takibi",
+          ],
+        },
+        duet: {
+          name: "2 KİŞİLİK GRUP DERSİ",
+          sessions: "8 SEANS (KİŞİ BAŞI)",
+          price: "6.500 ₺",
+          priceNumber: "6.500",
+          unit: "8 Seans / Kişi Başı",
+          badge: "Düet / Partnerli",
+          desc: "Eşiniz, arkadaşınız veya spor partnerinizle birlikte katılabileceğiniz yüksek motivasyonlu düet reformer dersi.",
+          features: [
+            "2 kişilik özel butik sınıf ortamı",
+            "Partnerle birlikte yüksek motivasyon",
+            "Kişiye özel direnç yayı ayarları",
+            "Reformer & Tower aletleriyle derin güçlenme",
+            "Bireysel duruş ve nefes kontrolü",
+          ],
+        },
+        trio: {
+          name: "3 KİŞİLİK GRUP DERSİ",
+          sessions: "8 SEANS (KİŞİ BAŞI)",
+          price: "5.500 ₺",
+          priceNumber: "5.500",
+          unit: "8 Seans / Kişi Başı",
+          badge: "Butik Trio",
+          desc: "Samimi ve butik bir ortamda, kalabalıktan uzak 3 kişilik grup enerjisiyle hem sosyalleşin hem güçlenin.",
+          features: [
+            "Maksimum 3 kişilik butik grup kapasitesi",
+            "Eğitmenin her üyeyle tek tek ilgilendiği kontrol",
+            "Akıcı reformer koreografileri ve merkezleme",
+            "Kondisyon, esneklik ve denge odaklı program",
+            "Düzenli haftalık program disiplini",
+          ],
+        },
+        quad: {
+          name: "4 KİŞİLİK GRUP DERSİ",
+          sessions: "8 SEANS (KİŞİ BAŞI)",
+          price: "4.500 ₺",
+          priceNumber: "4.500",
+          unit: "8 Seans / Kişi Başı",
+          badge: "Mini Grup",
+          desc: "En avantajlı ücretle reformer pilates kalitesini yaşatan, dinamik ve ritmik küçük grup çalışması.",
+          features: [
+            "Maksimum 4 kişilik sınırlı kontenjan",
+            "Yüksek tempolu, eğlenceli ve motive edici atmosfer",
+            "Tüm vücut güçlendirici reformer serileri",
+            "Omurga sağlığı ve sıkılaşma odağı",
+            "Ekonomik ve sürdürülebilir pilates rutini",
+          ],
+        },
+      },
+      perksTitle: "Tüm Paketlerimizde Standart Ayrıcalıklar",
+      perk1Title: "50 Dakika Tam Seans",
+      perk1Desc: "Isınmadan esnemeye eksiksiz ve yüksek verimli akış.",
+      perk2Title: "Ücretsiz Postür Analizi",
+      perk2Desc: "İlk seans öncesi omurga ve kas dengesi tespiti.",
+      perk3Title: "Hijyenik & Butik Ortam",
+      perk3Desc: "Her dersten sonra dezenfekte edilen profesyonel aletler.",
+      perk4Title: "Merkezi Kolay Ulaşım",
+      perk4Desc: "Mecidiyeköy Metrobüs & Metro hatlarına 3 dk yürüyüş.",
     },
     stats: {
       stat1: "Powerhouse",
@@ -155,6 +287,7 @@ const DICTIONARY: Record<Language, Dictionary> = {
     brandTagline: "Pilates Studio • Body & Mind",
     nav: {
       home: "Home",
+      pricing: "Pricing & Sessions",
       articles: "Articles",
       philosophy: "Philosophy",
       testimonials: "Reviews",
@@ -168,7 +301,97 @@ const DICTIONARY: Record<Language, Dictionary> = {
       description:
         "Thoughtful guides from Simge Karahan Bayraktar Pilates Studio on core activation, spinal longevity, and kinetic movement.",
       exploreBtn: "Explore Articles",
-      startFlowBtn: "Begin Flow",
+      startFlowBtn: "Session Packages",
+    },
+    pricing: {
+      sectionBadge: "SESSION PACKAGES & PRICING",
+      sectionTitle: "Session Packages Tailored To Your Goals",
+      sectionSubtitle:
+        "Rebuild your posture and kinetic strength under the expert guidance of Simge Karahan Bayraktar in our fully-equipped boutique studio.",
+      slogan: "Daha Güçlü, Daha Dengeli Bir Sen İçin Buradayız 🧡",
+      tabCards: "Card Details",
+      tabTable: "Official Price Table",
+      bookWhatsapp: "Book via WhatsApp",
+      sessionsSuffix: "8-Session Package",
+      perPersonSuffix: "8 Sessions / Per Person",
+      tableHeaderProgram: "PROGRAM & SESSION INFO",
+      tableHeaderPrice: "PACKAGE FEE",
+      tableSubnote: "* All sessions run for a full 50 minutes. Packages are designed to be completed within 1 month.",
+      packages: {
+        single: {
+          name: "INDIVIDUAL PRIVATE",
+          sessions: "8 SESSIONS",
+          price: "8.500 ₺",
+          priceNumber: "8.500",
+          unit: "8 Sessions VIP Package",
+          badge: "Most Popular • VIP",
+          desc: "Bespoke 1-on-1 private sessions curated specifically for your anatomical posture and personal wellness goals.",
+          features: [
+            "Undivided 50-min attention from certified instructor",
+            "Comprehensive posture & spinal movement assessment",
+            "Full access to Reformer, Cadillac, and Chair",
+            "Personalized flexible scheduling",
+            "Weekly progression and mobility benchmarks",
+          ],
+        },
+        duet: {
+          name: "2-PERSON DUET CLASS",
+          sessions: "8 SESSIONS (PER PERSON)",
+          price: "6.500 ₺",
+          priceNumber: "6.500",
+          unit: "8 Sessions / Per Person",
+          badge: "Duet / Partnered",
+          desc: "Train alongside a friend, spouse, or partner with high motivation and semi-private individualized pacing.",
+          features: [
+            "Intimate 2-person boutique environment",
+            "Mutual accountability and shared energy",
+            "Custom resistance spring adjustments",
+            "Reformer & Tower core conditioning",
+            "Dedicated breath & alignment cues",
+          ],
+        },
+        trio: {
+          name: "3-PERSON GROUP CLASS",
+          sessions: "8 SESSIONS (PER PERSON)",
+          price: "5.500 ₺",
+          priceNumber: "5.500",
+          unit: "8 Sessions / Per Person",
+          badge: "Boutique Trio",
+          desc: "A boutique group setting that balances camaraderie with attentive, close supervision away from crowded gyms.",
+          features: [
+            "Capped at max 3 participants",
+            "Instructor checks form and posture for every client",
+            "Fluid reformer choreography and core stabilization",
+            "Balanced strength, stamina, and mobility flow",
+            "Consistent weekly routine and discipline",
+          ],
+        },
+        quad: {
+          name: "4-PERSON GROUP CLASS",
+          sessions: "8 SESSIONS (PER PERSON)",
+          price: "4.500 ₺",
+          priceNumber: "4.500",
+          unit: "8 Sessions / Per Person",
+          badge: "Mini Group",
+          desc: "The most economical route to premium reformer training with vibrant tempo and encouraging peer energy.",
+          features: [
+            "Limited to max 4 participants per session",
+            "High tempo, engaging, and motivating vibe",
+            "Full-body sculpting reformer sequences",
+            "Spinal longevity and firming emphasis",
+            "Sustainable, affordable pilates routine",
+          ],
+        },
+      },
+      perksTitle: "Included in Every Single Package",
+      perk1Title: "Full 50-Minute Sessions",
+      perk1Desc: "Complete warm-up to cool-down without cutting corners.",
+      perk2Title: "Complimentary Posture Analysis",
+      perk2Desc: "Assessment of spinal curvature and imbalances prior to start.",
+      perk3Title: "Hygienic Boutique Setting",
+      perk3Desc: "Hospital-grade equipment sanitized after every single class.",
+      perk4Title: "Central Transit Accessibility",
+      perk4Desc: "3-min walking distance to Mecidiyeköy Metrobus & Metro.",
     },
     stats: {
       stat1: "Powerhouse",
