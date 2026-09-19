@@ -21,6 +21,7 @@ interface Dictionary {
   nav: {
     home: string;
     pricing: string;
+    archive: string;
     articles: string;
     philosophy: string;
     testimonials: string;
@@ -66,6 +67,51 @@ interface Dictionary {
     perk3Desc: string;
     perk4Title: string;
     perk4Desc: string;
+  };
+  archive: {
+    sectionBadge: string;
+    sectionTitle: string;
+    sectionSubtitle: string;
+    filterAll: string;
+    filterCadillac: string;
+    filterClinical: string;
+    clickToEnlarge: string;
+    closeModal: string;
+    prev: string;
+    next: string;
+    clinicalBadge: string;
+    beforeLabel: string;
+    afterLabel: string;
+    ctaBook: string;
+    items: {
+      inversion: {
+        title: string;
+        tag: string;
+        desc: string;
+      };
+      cadillacExtension: {
+        title: string;
+        tag: string;
+        desc: string;
+      };
+      swissballBalance: {
+        title: string;
+        tag: string;
+        desc: string;
+      };
+      cadillacSplit: {
+        title: string;
+        tag: string;
+        desc: string;
+      };
+      scoliosisTransformation: {
+        title: string;
+        tag: string;
+        desc: string;
+        details: string;
+        badge: string;
+      };
+    };
   };
   stats: {
     stat1: string;
@@ -126,6 +172,7 @@ const DICTIONARY: Record<Language, Dictionary> = {
     nav: {
       home: "Ana Sayfa",
       pricing: "Paketler",
+      archive: "Arşiv",
       articles: "Yazılar",
       philosophy: "Felsefe",
       testimonials: "Danışanlar",
@@ -234,6 +281,52 @@ const DICTIONARY: Record<Language, Dictionary> = {
       perk4Title: "Merkezi Kolay Ulaşım",
       perk4Desc: "Mecidiyeköy Metrobüs & Metro hatlarına 3 dk yürüyüş.",
     },
+    archive: {
+      sectionBadge: "STÜDYO ARŞİVİ & DÖNÜŞÜMLER",
+      sectionTitle: "Bedenin Gücünü ve Değişimini Keşfedin",
+      sectionSubtitle:
+        "Simge Karahan Bayraktar Pilates Stüdyosu'nda uygulanan ileri seviye Cadillac seansları ve klinik omurga düzelme başarıları.",
+      filterAll: "Tüm Arşiv (5)",
+      filterCadillac: "Aletli Seanslar (4)",
+      filterClinical: "Klinik Başarı (1)",
+      clickToEnlarge: "Büyütmek için tıklayın",
+      closeModal: "Kapat",
+      prev: "Önceki",
+      next: "Sonraki",
+      clinicalBadge: "Klinik Dönüşüm (Röntgen)",
+      beforeLabel: "Öncesi (Before)",
+      afterLabel: "Sonrası (After)",
+      ctaBook: "Bu Seviyeye Ulaşmak İçin Randevu Al",
+      items: {
+        inversion: {
+          title: "Cadillac Ters Duruş & Omurga Dekompresyonu",
+          tag: "İleri Seviye Trapeze",
+          desc: "Yerçekimsiz asılı pozisyonda omurga disklerindeki baskıyı sıfırlayan, derin karın ve merkez (core) aktivasyonu.",
+        },
+        cadillacExtension: {
+          title: "Göğüs Açma & Torakal Mobilite",
+          tag: "Artistik Cadillac Akışı",
+          desc: "Masa başı duruş bozukluklarını ve omuz kapanmalarını gideren, yay dirençli estetik omurga ekstansiyonu.",
+        },
+        swissballBalance: {
+          title: "Kinetik Denge & Swiss Ball Entegrasyonu",
+          tag: "Denge & Propriosepsiyon",
+          desc: "Ters duruşta pilates topuyla dengelenerek derin dengeleyici kasları ve pelvik tabanı maksimum güçlendiren ileri seans.",
+        },
+        cadillacSplit: {
+          title: "Pelvik Mobilite & Bacak Açma",
+          tag: "Esneklik & Derin Güç",
+          desc: "Asılı trapez desteğiyle kalça fleksörleri, psoas ve hamstring kaslarında güvenli, derin ve akıcı esneme.",
+        },
+        scoliosisTransformation: {
+          title: "Klinik Başarı: Skolyoz Düzleşmesi",
+          tag: "Röntgen İle Kanıtlanmış Sonuç",
+          desc: "Düzenli birebir klinik pilates seansları sonrası omurga eğriliğindeki (Cobb açısı) gözle görülür düzelme ve omurganın doğal simetrisine kavuşması.",
+          details: "Öncesi (Solda): Belirgin torakolomber skolyoz eğrisi ve asimetri. Sonrası (Sağda): Dik aksına kavuşmuş omurga ve dengelenmiş pelvis hizası.",
+          badge: "Klinik Kanıt",
+        },
+      },
+    },
     stats: {
       stat1: "Powerhouse",
       stat1Sub: "Derin Merkez Kontrolü",
@@ -294,6 +387,7 @@ const DICTIONARY: Record<Language, Dictionary> = {
     nav: {
       home: "Home",
       pricing: "Packages",
+      archive: "Archive",
       articles: "Articles",
       philosophy: "Philosophy",
       testimonials: "Reviews",
@@ -401,6 +495,52 @@ const DICTIONARY: Record<Language, Dictionary> = {
       perk3Desc: "Hospital-grade equipment sanitized after every single class.",
       perk4Title: "Central Transit Accessibility",
       perk4Desc: "3-min walking distance to Mecidiyeköy Metrobus & Metro.",
+    },
+    archive: {
+      sectionBadge: "STUDIO ARCHIVE & TRANSFORMATIONS",
+      sectionTitle: "Discover Strength & Visible Transformation",
+      sectionSubtitle:
+        "Glimpses into advanced Cadillac sessions and verified clinical spine corrections at Simge Karahan Bayraktar Pilates Studio.",
+      filterAll: "All Archive (5)",
+      filterCadillac: "Cadillac Sessions (4)",
+      filterClinical: "Clinical Proof (1)",
+      clickToEnlarge: "Click to enlarge",
+      closeModal: "Close",
+      prev: "Previous",
+      next: "Next",
+      clinicalBadge: "Clinical Transformation (X-Ray)",
+      beforeLabel: "Before",
+      afterLabel: "After",
+      ctaBook: "Book A Session To Reach This Level",
+      items: {
+        inversion: {
+          title: "Cadillac Inversion & Spinal Decompression",
+          tag: "Advanced Trapeze",
+          desc: "Relieves gravitational compression on spinal discs, cultivating deep core control and full axial extension.",
+        },
+        cadillacExtension: {
+          title: "Thoracic Mobility & Heart Opening",
+          tag: "Artistic Cadillac Flow",
+          desc: "Counters sedentary kyphosis, expanding ribcage and shoulder girdle with therapeutic spring tension.",
+        },
+        swissballBalance: {
+          title: "Kinetic Balance & Swiss Ball Integration",
+          tag: "Balance & Proprioception",
+          desc: "Challenges proprioception and engages pelvic floor and stabilizer muscles through multi-planar balance.",
+        },
+        cadillacSplit: {
+          title: "Pelvic Mobility & Full Split Extension",
+          tag: "Mobility & Deep Strength",
+          desc: "Suspended trapeze work for deep hamstring and psoas release; the pinnacle of dynamic studio mobility.",
+        },
+        scoliosisTransformation: {
+          title: "Clinical Milestone: Scoliosis Straightening",
+          tag: "X-Ray Verified Clinical Result",
+          desc: "Noticeable clinical straightening of spinal curvature (Cobb angle) and pelvic realignment achieved through disciplined personalized Pilates.",
+          details: "Before (Left): Pronounced thoracolumbar scoliosis curve and postural asymmetry. After (Right): Realigned vertical spine and leveled pelvis.",
+          badge: "Clinical Proof",
+        },
+      },
     },
     stats: {
       stat1: "Powerhouse",

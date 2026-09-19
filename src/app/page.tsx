@@ -4,6 +4,7 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Pricing from "@/components/Pricing";
+import ArchiveGallery from "@/components/ArchiveGallery";
 import BlogFeed from "@/components/BlogFeed";
 import Testimonials from "@/components/Testimonials";
 import LocationMap from "@/components/LocationMap";
@@ -23,6 +24,9 @@ export default function Home() {
 
         {/* Studio Session Packages & Pricing */}
         <Pricing />
+
+        {/* Studio Visual Archive & Transformations */}
+        <ArchiveGallery />
 
         {/* Dynamic Filterable Blog Feed */}
         <BlogFeed />

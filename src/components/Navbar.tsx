@@ -55,6 +55,13 @@ export default function Navbar() {
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full" />
           </a>
           <a
+            href="#archive"
+            className="hover:text-orange-400 transition-colors py-1 relative group"
+          >
+            {t.nav.archive}
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full" />
+          </a>
+          <a
             href="#articles"
             className="hover:text-orange-400 transition-colors py-1 relative group"
           >
